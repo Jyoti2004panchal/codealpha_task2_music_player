@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #111;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.player {
+  width: 350px;
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.music-info h3 {
+  margin-bottom: 5px;
+}
+
+.progress-container {
+  background: #333;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#progress {
+  height: 100%;
+  width: 0%;
+  background: #08a5ff;
+  border-radius: 4px;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.controls button {
+  margin: 12px;
+  font-size: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  transition: 0.3s;
+}
+.controls button:hover {
+  background: #08a5ff;
+}
+
+.volume-control {
+  margin-top: 12px;
+}
+
+.volume-control input {
+  width: 100px;
+}
+
+/* Playlist */
+.playlist {
+  margin-top: 20px;
+  list-style: none;
+  background: #222;
+  padding: 15px;
+  border-radius: 12px;
+}
+.playlist li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.playlist li:hover,
+.playlist li.active {
+  background: #08a5ff;
+}
